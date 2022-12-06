@@ -5,10 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flayv's Homepage</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quicksand', sans-serif;
+            /* font-weight: bold;
+            font-size: 20px; */
+
+            display: grid;
+
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .mainBody {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        .sidebar {
+            background-color: cadetblue;
+            grid-column: 3;
+        }
+
+        .leftSpace {
+            margin-left: 10px;
+        }
+    </style>
 </head>
     <body>
 
-        <img src="flames.webp" height="100">
+        <div class="container">
+            <div class="mainBody">
+                <img src="flames.webp" height="100">
+
+                <h1>Welcome to the wacky world of the Flayv</h1>
+
+                <p>This website is gonna be super badass.<br>
+                    We're gonna have flames up at the top, and probably really oddly constrasting background and text colors.<br>
+                    For now though it's just bare ass HTML because idk wtf I'm doing.<br>
+                    Luckily, this is the exact kind of webpage that you make by figuring it out as you go.
+                </p>
+            </div>
+
+            <div class="sidebar">
+                <div class="leftSpace">
+                    <h2>Cool links!</h2>
+                    <ul>
+                        <li>
+                            <a href="https://slashthecash.com/">
+                                Slash the Cash - Join the Movement Against Undisclosed and Unlimited Spending in U.S. Elections<br>
+                            </a>
+                            <img src="White on Transparent_Slash The Cash.png" height="256">
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+
+        <!-- <img src="flames.webp" height="100">
 
         <h1>Welcome to the wacky world of the Flayv</h1>
 
@@ -26,7 +87,7 @@
                 </a>
                 <img src="White on Transparent_Slash The Cash.png" height="256">
             </li>
-        </ul>
+        </ul> -->
 
 
     </body>
