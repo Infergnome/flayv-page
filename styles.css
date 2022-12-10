@@ -1,0 +1,42 @@
+/*
+everything is inside the container class div
+banner is at the top. right now its 64 pixels across row 1
+mainBody is the left 2 columns
+sidebar is the blue guy on the right column
+*/
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 64px 1fr;
+}
+
+.banner {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.mainBody {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.sidebar {
+    background-color: cadetblue;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.leftSpace {
+    margin-left: 10px;
+}
